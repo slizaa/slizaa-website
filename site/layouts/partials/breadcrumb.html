@@ -1,12 +1,12 @@
 {{ $siteUrl := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
 {{ $.Scratch.Add "sitePath" .Site.BaseURL }}
 
-{{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" .Site.BaseURL "name" "home" "position" 1 )) }}
+{{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" .Site.BaseURL "name" "home" )) }}
 {{ range $index, $element := split $siteUrl "/" }}
 {{ $.Scratch.Add "sitePath" $element }}
 {{ $.Scratch.Add "sitePath" "/" }}
 {{ if ne $element "" }}
-{{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" ($.Scratch.Get "sitePath") "name" . "position" (add $index 2))) }}
+{{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" ($.Scratch.Get "sitePath") "name" . )) }}
 {{ end }}
 {{ end }}
 
@@ -16,7 +16,7 @@
         <div class="col-xs-12">
             <ol class="breadcrumb">
                 {{ range $.Scratch.Get "siteBreadcrumbs" }}
-                <li><a href="{{ .url }}">{{ .name }}</a></li>
+                <li><a href="{{ .url }}">{{ .name }} - {{ .position }}</a></li>
                 {{ end }}
             </ol>
         </div>

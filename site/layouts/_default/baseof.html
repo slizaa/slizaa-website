@@ -20,7 +20,19 @@
             {{ partial "breadcrumb.html" . }}
 
             {{ block "main" . }}
-            <!-- The part of the page that begins to differ between templates -->
+            <div class="container-fluid horizontal-section-container clearfix">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="main-page-content" class="section-container main-page-content clearfix">
+                            <div class="section-content">
+                                {{ block "main-single" . }}
+                                <!-- single column content -->
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {{ end }}
 
         </div>
@@ -29,14 +41,12 @@
             {{ partial "footer.html" . }}
         </div>
 
-    </div><!-- .inside-body-content-container -->
-    <!-- End: Page Body Inside Content -->
+    </div>
 
     {{ partial "footer-beneath.html" . }}
     {{ partial "footer-js.html" . }}
 
-</div><!-- .outer-container -->
-<!-- End: Page Outer Container -->
+</div>
 
 </body>
 

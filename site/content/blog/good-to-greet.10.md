@@ -1,7 +1,6 @@
 +++
 date = "2017-06-04T12:13:07+02:00"
 title = "good to greet"
-type = "single_column"
 +++
 
 
