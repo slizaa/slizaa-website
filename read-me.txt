@@ -1,0 +1,34 @@
+FIRST SETUP:
+
+1. Install hugo ()
+
+2. Install node.js ()
+
+3. Install gulp / less
+   - npm install --save-dev gulp
+   - npm install --save-dev less
+   - npm install --save-dev gulp-less
+   - npm install --save-dev run-sequence
+   - npm install --save-dev require-dir
+   - npm install --save-dev del
+
+4. Create hugo site 
+   - cd ./site
+   - hugo new site .
+
+5. Build with gulp (also runs hugo site generator):
+   - <slizaa.org>/gulp
+
+6. Run the hugo server (from a second terminal):
+   - hugo server --watch --verbose
+
+Links:
+[1] http://danbahrami.io/articles/building-a-production-website-with-hugo-and-gulp-js/
+
+
+After checkout:
+
+1) npm install --save-dev
+2) gulp
+3) cd ./site
+4) hugo server --watch --verbose

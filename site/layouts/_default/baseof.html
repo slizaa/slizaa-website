@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" . }}
+
+<body class="background-body isolated-sections loader-bar">
+
+<!-- Page Outer Container -->
+<div class="outer-container clearfix">
+
+    <div class="shadow">
+        {{ partial "header.html" . }}
+    </div>
+
+    <!-- =========== Page Body Inside Content =========== -->
+    <div class="inside-body-content-container clearfix">
+
+
+        <div class="shadow">
+            {{ partial "breadcrumb.html" . }}
+
+            {{ block "main" . }}
+            <!-- The part of the page that begins to differ between templates -->
+            {{ end }}
+
+        </div>
+
+        <div class="shadow">
+            {{ partial "footer.html" . }}
+        </div>
+
+    </div><!-- .inside-body-content-container -->
+    <!-- End: Page Body Inside Content -->
+
+    {{ partial "footer-beneath.html" . }}
+    {{ partial "footer-js.html" . }}
+
+</div><!-- .outer-container -->
+<!-- End: Page Outer Container -->
+
+</body>
+
+</html>
