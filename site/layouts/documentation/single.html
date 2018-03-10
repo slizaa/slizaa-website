@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<!-- =========== Section 2 =========== -->
+<div class="container-fluid horizontal-section-container clearfix">
+
+    <div class="row">
+
+        <div id="asciidoc-toc"  class="col-md-4 col-lg-3">
+            <div id="asciidoc-toc-box">
+                <h2>Table of contents</h2>
+                {{ .TableOfContents }}
+            </div>
+        </div>
+
+        <div id="asciidoc-content" class="col-md-8 col-lg-9">
+            <div id="main-page-content" class="section-container main-page-content clearfix">
+                <div class="section-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{{ end }}

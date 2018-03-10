@@ -2,7 +2,7 @@
 <header class="clearfix">
 
     <div class="logo">
-        <a href="index.html"><img src="/img/slizaa-logo.svg" alt="slizaa.org" width="220"></a>
+        <a href="/index.html"><img src="/img/slizaa-logo.svg" alt="slizaa.org" width="220"></a>
     </div>
 
     <div id="main-menu-container" class="clearfix">
@@ -14,8 +14,7 @@
             <li class='menu-item {{ if eq .Section "blog" }}current-menu-ancestor{{ end }}'><a href="/blog"><i class="fa fa-pencil "></i>Blog</a></li>
             <li class='menu-item {{ if eq .Section "documentation" }}current-menu-ancestor{{ end }}'><a href="/documentation"><i class="fa fa-terminal "></i>Documentation</a>
                 <ul class="sub-menu">
-                    <li class="menu-item"><a href="/documentation/core_concepts.html">Core concepts</a></li>
-                    <li class="menu-item"><a href="/documentation/getting_started.html">Getting started</a></li>
+                    <li class="menu-item"><a href="/documentation/getting_started">Getting started</a></li>
                 </ul>
             </li>
             <li class='menu-item {{ if eq .Section "download" }}current-menu-ancestor{{ end }}'><a href="/download"><i class="fa fa-download "></i>Download</a></li>

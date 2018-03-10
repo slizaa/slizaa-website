@@ -1,25 +1,28 @@
-{{ $siteUrl := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-{{ $.Scratch.Add "sitePath" .Site.BaseURL }}
+{{ $trimmedDir := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $categories := split $trimmedDir "/" }}
+{{ $total := len $categories }}
 
-{{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" .Site.BaseURL "name" "home" )) }}
-{{ range $index, $element := split $siteUrl "/" }}
-{{ $.Scratch.Add "sitePath" $element }}
-{{ $.Scratch.Add "sitePath" "/" }}
-{{ if ne $element "" }}
-{{ $.Scratch.Add "siteBreadcrumbs" (slice (dict "url" ($.Scratch.Get "sitePath") "name" . )) }}
-{{ end }}
-{{ end }}
-
-
+{{ $lastIndex := sub $total 1 }}
 <div id="breadcrumbs-container" class="container-fluid horizontal-section-container hidden-xs clearfix">
     <div class="row">
         <div class="col-xs-12">
             <ol class="breadcrumb">
-                {{ range $.Scratch.Get "siteBreadcrumbs" }}
-                <li><a href="{{ .url }}">{{ .name }} - {{ .position }}</a></li>
+
+                <li><a href="/">Home</a></li>
+
+
+                {{  range $i, $v := $categories }}
+                    {{ if eq $i $lastIndex }}
+                        <span class="breadcrumb-item active">{{ $v }}</span>
+                    {{ else }}
+                        {{ $firstPart := add $i 1 }}
+                        {{ $subDirs := first $firstPart $categories }}
+                        {{ $relUrl := delimit $subDirs "/" }}
+                        <li><a href="/{{ $relUrl }}">{{ humanize $v }}</a></li>
+                    {{ end }}
                 {{ end }}
+
             </ol>
         </div>
     </div>
 </div>
-<!-- End: Section: Breadcrumbs -->
