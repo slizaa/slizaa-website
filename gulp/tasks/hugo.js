@@ -51,6 +51,7 @@ gulp.task('hugo:without-drafts', ['hugo:delete'], function () {
  *
  */
 gulp.task('hugo:delete', function () {
-    var dst1 = path.join(process.cwd(), 'public');
+    var dst1 =  path.join(process.cwd(), 'site/public/**') ;
+    gutil.log('hugo delete: \n' + dst1);
     del.sync(dst1);
 });

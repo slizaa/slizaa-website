@@ -2,9 +2,9 @@
 title: Quick Start
 date: 2018-03-09
 publishdate: 2018-03-09
+categories: ["Overview"]
+categories_weight: 1
 ---
-
-# Quick Start
 
 ## Step 1: Download and install
 
