@@ -18,12 +18,16 @@
                     <h1>{{ .Title }}</h1>
                 </div>
 
+                <div class="section-content">
+                        {{ .Summary }}
+                </div>
+
                 <div id="documentation-toc-box">
                     {{ .TableOfContents }}
                 </div>
 
                 <div class="section-content">
-                    {{ .Content }}
+                    {{ replace .Content .Summary "" | safeHTML }}
                 </div>
             </div>
         </div>
