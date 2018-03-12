@@ -6,6 +6,8 @@ categories: ["Overview"]
 categories_weight: 1
 ---
 
+This is a short summary.<!--more--> 
+
 ## Step 1: Download and install
 
 Download the latest slizaa distribution here. You have to unpack the platform-specific archive to an arbitrary folder on your local disc. Start slizaa by double-clicking the slizaa executable that you can find in the installation directory.

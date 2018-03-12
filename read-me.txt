@@ -16,11 +16,7 @@ FIRST SETUP:
    - cd ./site
    - hugo new site .
 
-5. Build with gulp (also runs hugo site generator):
-   - <slizaa.org>/gulp
 
-6. Run the hugo server (from a second terminal):
-   - hugo server --watch --verbose
 
 Links:
 [1] http://danbahrami.io/articles/building-a-production-website-with-hugo-and-gulp-js/
@@ -28,7 +24,16 @@ Links:
 
 After checkout:
 
-1) npm install --save-dev
-2) gulp
+0) npm install --global gulp-cli
+1) npm install
+2) Build with gulp (also runs hugo site generator):
+   - <repo-dir>/gulp
 3) cd ./site
-4) hugo server --watch --verbose
+5) Run the hugo server (from a second terminal):
+   - hugo server --watch --verbose
+
+
+
+
+
+

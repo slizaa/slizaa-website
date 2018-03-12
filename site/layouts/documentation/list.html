@@ -1,15 +1,30 @@
-{{ define "main-single" }}
+{{ define "main" }}
 
-            {{.Title}}
-        {{.Content}}
-    <ul>
-    <!-- Ranges through content/post/*.md -->
-    {{range .Data.Pages}}
-    {{ if ne .Title "" }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-    {{ end }}
-    {{ end }}
-    </ul>
+<!-- =========== Section 2 =========== -->
+<div class="container-fluid horizontal-section-container clearfix">
+
+    <div class="row">
+
+        <div id="categories-toc"  class="col-md-3 col-lg-3">
+            <div id="categories-toc-box">
+                {{ partial "documentation/nav.html" . }}
+            </div>
+        </div>
+    
+        <div class="col-md-9 col-lg-9">
+            {{ $paginator := .Paginate (where .Data.Pages "Section" .Section) 5 }}
+            <section class="flex-ns flex-wrap justify-around mt5">
+              {{ range  $paginator.Pages }}
+              <div class="relative w-100  mb4 bg-white">
+                {{ partial "documentation/summary.html" . }}
+              </div>
+              {{ end }}
+            </section>
+            {{ template "_internal/pagination.html" . }}
+        </div>
+
+    </div>
+
+</div>
+
 {{ end }}

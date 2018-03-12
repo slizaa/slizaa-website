@@ -1,10 +1,10 @@
 <ul class="docs-nav">
     {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-    <li><strong>{{ $name | title }}</strong></li>
-    {{ range $taxonomy.Pages }}
-        {{ if ne .Title "" }}
-        <li><a href="#{{ .LinkTitle | urlize }}" class="cc-active">{{ .Title }}</a></li>
+        <li class="docs-nav-title">{{ $name | title }}</li>
+        {{ range $taxonomy.Pages }}
+            {{ if ne .Title "" }}
+            <li><a href="{{ .URL  }}" class="cc-active">{{ .Title }}</a></li>
+            {{ end }}
         {{ end }}
-    {{ end }}
     {{ end }}
 </ul>
