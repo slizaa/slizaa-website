@@ -1,10 +1,14 @@
-<div>
-    <h1 class="f3 near-black">
-      <a href="{{ .URL }}" class="link black dim">
-        {{ .Title }}
-      </a>
+<div class="bg-white mb2 pa3 pa4-l gray">
+
+  <h1 class="near-black f3">
+      <a href="{{ .URL }}" class="link primary-color dim"> {{ .Title }}</a>
     </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+
+    <div class="lh-copy links">
       {{ .Summary  }}
+        <a href="{{ .URL }}" class="f6 mt2 db link primary-color dim">
+          Read More »
+        </a>
     </div>
-  </div>
+
+</div>    
