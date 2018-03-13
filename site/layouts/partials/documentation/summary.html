@@ -1,14 +1,7 @@
-<div class="bg-white mb2 pa3 pa4-l gray">
-
-  <h1 class="near-black f3">
-      <a href="{{ .URL }}" class="link primary-color dim"> {{ .Title }}</a>
-    </h1>
-
-    <div class="lh-copy links">
-      {{ .Summary  }}
-        <a href="{{ .URL }}" class="f6 mt2 db link primary-color dim">
-          Read More »
-        </a>
-    </div>
-
-</div>    
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h3 class="card-title">{{ .Title }}</h3>
+    <p class="card-text">{{ .Summary  }}</p>
+    <a href="{{ .URL }}" class="card-link">Read More »</a>
+  </div>
+</div>
