@@ -5,8 +5,10 @@
  */
 
 /* fonts stylesheet */
-@import url('fonts/stylesheet.css');
+// @import url('fonts/stylesheet.css');
 @import "colour-definition.less";
+
+@slizaa-font-family: 'Libre Franklin', sans-serif;
 
 /* ========== General ========== */
 
@@ -16,7 +18,7 @@ html {
 }
 
 body {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: @slizaa-font-family;
     color: @colour-black;
     background: @colour-light;
     width:100%;
@@ -29,17 +31,6 @@ body {
 
 b, strong {
     font-weight: normal;
-    font-family: 'open_sanssemibold', sans-serif;
-}
-
-em {
-    font-family: 'open_sanslight_italic', sans-serif;
-}
-em strong,
-em b,
-strong em,
-b em {
-    font-family: 'open_sanssemibold_italic', sans-serif;
 }
 
 a,
@@ -63,7 +54,6 @@ a:hover {
 p a {
     padding-bottom:1px;
     border-bottom:1px dotted #a8a8a8;
-    font-family: 'open_sansregular', sans-serif;
 }
 p a:hover {
     border-color:#1d1d1d;
@@ -73,48 +63,32 @@ a:active, a:focus {
     text-decoration: none;
 }
 
-/* ========== Typography ========== */
+// /* ========== Typography ========== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    font-family: 'open_sanslight', sans-serif;
-    font-weight: normal;
-}
-
-h1, .h1 {
-    font-size: 2.14em;
-    line-height: 1.27;
-}
-h2, .h2 {
-    font-size: 1.86em;
-    line-height: 1.46;
-}
-h3, .h3 {
-    font-size: 1.43em;
-    line-height: 1.65;
-}
-h4, .h4 {
-    font-size: 1.29em;
-    line-height: 1.65;
-}
-h5, .h5 {
-    font-size: 1.21em;
-    line-height: 1.55;
-}
-h6, .h6 {
-    font-size: 1.07em;
-    line-height: 1.5;
-}
+// h1, .h1 {
+//     font-size: 20px;
+//     // line-height: 1.27;
+// }
+// h2, .h2 {
+//     font-size: 18px;
+//     // line-height: 1.46;
+// }
+// h3, .h3 {
+//     font-size: 16px;
+//     // line-height: 1.65;
+// }
+// h4, .h4 {
+//     font-size: 15px;
+//     line-height: 1.65;
+// }
+// h5, .h5 {
+//     font-size: 14px;
+//     line-height: 1.55;
+// }
+// h6, .h6 {
+//     font-size: 1.07em;
+//     line-height: 1.5;
+// }
 
 p {
     margin: 0 0 1.1em;
@@ -154,7 +128,6 @@ dl {
 }
 
 dt {
-    font-family: 'open_sansregular', sans-serif;
     font-weight: bold;
 }
 
@@ -175,7 +148,6 @@ pre {
 }
 
 th {
-    font-family: 'open_sansregular', sans-serif;
     font-weight: bold;
 }
 
@@ -196,12 +168,10 @@ form {
 }
 
 label {
-    font-family: 'open_sansregular', sans-serif;
     font-weight: bold;
 }
 
 .radio label, .checkbox label {
-    font-family: 'open_sanslight', sans-serif;
     font-weight: normal;
 }
 
@@ -221,7 +191,6 @@ label {
 
 .btn {
     border-radius: 5px;
-    font-family: 'open_sansregular', sans-serif;
     font-weight: normal;
     padding: 8px 20px;
     font-size: 14px;
@@ -266,22 +235,6 @@ label {
 
 .img-thumbnail {
     border-radius: 0;
-}
-
-/* ========== Helpers ========== */
-
-.close {
-    font-family: 'open_sansbold', sans-serif;
-}
-
-/* ========== Tabs, Pills ========== */
-
-.nav-tabs > li {
-    font-family: 'open_sansregular', sans-serif;
-}
-
-.nav-pills > li > * {
-    font-family: 'open_sansregular', sans-serif;
 }
 
 .nav-pills > li > a {
@@ -372,13 +325,11 @@ label {
     font-weight: normal;
     line-height: 1;
     color: #fff;
-    font-family: 'open_sansbold', sans-serif;
     border-radius: 0;
 }
 
 .badge {
     font-weight: normal;
-    font-family: 'open_sansbold', sans-serif;
 }
 
 /* ========== Thumbnails ========== */
