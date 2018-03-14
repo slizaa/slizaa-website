@@ -4,6 +4,8 @@ title = "Slizaa"
 
 relativeURLs = true
 
+pygmentsStyle = "tango"
+
 [[menu.main]]
     name = "Get involved"
     identifier = "getinvolved"
