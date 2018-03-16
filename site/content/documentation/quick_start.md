@@ -2,11 +2,11 @@
 title: Quick Start
 date: 2018-03-09
 publishdate: 2018-03-09
-doccats: ["Overview"]
-doccats_weight: 1
+documentationCategories: ["Overview"]
+documentationCategories_weight: 1
 ---
 
-Only have a few minutes? The Quick Start Guide is intended as a basic guide to help you get started using Slizaa to scan your software systems.<!--more--> 
+Only have a few minutes? The Quick Start Guide is intended as a basic guide to help you get started using Slizaa!<!--more--> 
 
 ## Step 1: Download and install
 

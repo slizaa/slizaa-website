@@ -2,8 +2,8 @@
 title: Examples
 date: 2018-03-09
 publishdate: 2018-03-09
-doccats: ["Overview"]
-doccats_weight: 2
+documentationCategories: ["Overview"]
+documentationCategories_weight: 2
 ---
 
 Examples.<!--more--> 

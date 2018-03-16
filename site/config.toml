@@ -11,5 +11,7 @@ pygmentsStyle = "tango"
 [taxonomies]
   tag = "tags"
   category = "categories"
-  doccat = "doccats"
+  documentationCategory = "documentationCategories"
+  developmentCategory = "developmentCategories"
+  communityCategory = "communityCategories"
 

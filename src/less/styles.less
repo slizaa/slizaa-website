@@ -14,7 +14,7 @@ body {
 
 #main-content {
 
-  padding-left: 20px;
+  padding: 20px;
 
   div.imageblock div.title {
     padding-bottom: 15px;
@@ -22,23 +22,34 @@ body {
 
   @media (min-width: 992px) {
       padding-left: 0px;
-      padding-right: 50px;
+      padding-right: 25px;
   }
 }
 
 .footer {
   border-radius: 20px 20px 20px 20px !important;
-  font-size: 0.7rem; 
+  font-size: 0.8rem; 
+}
+
+.nav-footer {
+  width: 100%;
+  text-align: center;
+  
+  ul {
+    background-color: violet;
+  }  
+  
+  li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+  }
 }
 
 #pages-toc {
-  padding: 0px 10px 10px 10px;
+  padding: 0px 0px 0px 0px;
   border-right: none;
   min-height: auto !important;
-
-  @media (min-width: 992px) {
-    padding-right: 0px;
-  }
 }
 
 #pages-toc-box {
@@ -49,7 +60,7 @@ body {
   font-size: 0.8rem;
 
   @media (min-width: 992px) {
-    margin: 25px 30px;
+    margin: 35px 30px;
     padding: 10px 10px 20px 10px;
   }
 

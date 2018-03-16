@@ -4,6 +4,8 @@ draft:  false
 title:  "License"
 weight:  100
 teaser: "The license of this project"
+developmentCategories: ["Development"]
+developmentCategories_weight: 5
 ---
 
 Slizaa is open source and released under the terms of the [Eclipse Public License, 1.0](https://www.eclipse.org/legal/epl-v10.html).

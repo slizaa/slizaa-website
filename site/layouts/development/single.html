@@ -8,20 +8,18 @@
         <!-- documentation navigation -->
         <div id="pages-toc"  class="col-md-3 col-lg-3">
             <div id="pages-toc-box">
-                {{ partial "menu_section.html" . }}
+                    {{ partial "menu_taxonomy.html" (dict "taxonomy" .Site.Taxonomies.developmentCategories ) }}
             </div>
         </div>
 
-        <div id="main-content" class="col-md-9 col-lg-9">
-            <div id="main-page-content" class="section-container main-page-content clearfix">
+        <div id="main-page-content" class="col-md-9 col-lg-9 section-container main-page-content clearfix">
 
-                <div class="section-content">
-                    <h1>{{ .Title }}</h1>
-                </div>
+            <div class="section-content">
+                <h1>{{ .Title }}</h1>
+            </div>
 
-                <div class="section-content">
-                    {{ replace .Content .Summary "" | safeHTML }}
-                </div>
+            <div class="section-content">
+                {{ replace .Content .Summary "" | safeHTML }}
             </div>
         </div>
 

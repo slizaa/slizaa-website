@@ -4,6 +4,8 @@ draft:  false
 title:  "Contributing"
 weight:  100
 teaser:  "How to contribute to the Slizaa project"
+developmentCategories: ["Development"]
+developmentCategories_weight: 1
 ---
 
 You love Slizaa but miss a certain feature? You found a bug and want to report it, or even better, fix it yourself? That's great! Slizaa is all open source and your help is highly appreciated.

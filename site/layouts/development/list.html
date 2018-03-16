@@ -7,7 +7,7 @@
         <!-- documentation navigation -->
         <div id="pages-toc"  class="col-md-3 col-lg-3">
             <div id="pages-toc-box">
-                {{ partial "menu_taxonomy.html" (dict "taxonomy" .Site.Taxonomies.documentationCategories ) }}
+                    {{ partial "menu_taxonomy.html" (dict "taxonomy" .Site.Taxonomies.developmentCategories ) }}
             </div>
         </div>
 
@@ -15,7 +15,7 @@
         <div id="main-content" class="col-md-9 col-lg-9">
             <h1>{{ .Title }}</h1>
             <dl>
-            {{ range $name, $taxonomy := .Site.Taxonomies.documentationCategories }}
+            {{ range $name, $taxonomy := .Site.Taxonomies.developmentCategories }}
                 {{ range $taxonomy.Pages }}
                 <dt>{{ .Title }}</dt>
                 <dd>

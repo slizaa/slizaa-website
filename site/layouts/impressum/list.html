@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="container-fluid horizontal-section-container clearfix">
+
+    <div id="main-page-content" class="col section-container main-page-content">
+
+        <div class="ml-4 mr-4 section-content">
+            {{   safeHTML .Content }}
+        </div>
+
+    </div>
+</div>
+
+{{ end }}

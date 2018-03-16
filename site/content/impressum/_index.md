@@ -36,8 +36,7 @@
     Kanada.</p>
 <p></p>
 <p>Quelle: <em><a rel="nofollow" href="http://www.e-recht24.de">http://www.e-recht24.de</a></em></p>
-</div>
-<div>
+
 <h1>Haftungsausschluss (Disclaimer)</h1>
 <h3 class="mb-2">Haftung für Inhalte</h3>
 <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen

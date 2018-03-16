@@ -7,5 +7,6 @@ menu:
     name: "Community"
     title: "Community"
     weight: 60
-    pre: "<i class='fa fa-users'></i>"     
+    pre: "<i class='fa fa-users'></i>"
+    url: "/community/gettinghelp"  
 ---
