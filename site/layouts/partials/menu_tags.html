@@ -1,0 +1,10 @@
+<ul class="docs-nav">
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        <li class="border-bottom font-weight-bold mb-1">{{ $name | title }}</li>
+        {{ range $taxonomy.Pages }}
+            {{ if ne .Title "" }}
+            <li><a href="{{ .URL  }}" class="cc-active">{{ .Title }}</a></li>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</ul>

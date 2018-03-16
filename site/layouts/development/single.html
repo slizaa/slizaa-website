@@ -8,7 +8,7 @@
         <!-- documentation navigation -->
         <div id="pages-toc"  class="col-md-3 col-lg-3">
             <div id="pages-toc-box">
-                {{ partial "menu_documentation_taxonomy.html" . }}
+                {{ partial "menu_section.html" . }}
             </div>
         </div>
 
@@ -17,10 +17,6 @@
 
                 <div class="section-content">
                     <h1>{{ .Title }}</h1>
-                </div>
-
-                <div class="section-content">
-                        {{ .Summary }}
                 </div>
 
                 <div class="section-content">

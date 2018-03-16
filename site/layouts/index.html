@@ -1,0 +1,17 @@
+{{ define "main-single" }}
+    <main aria-role="main">
+      <header class="homepage-header">
+        {{ with .Params.subtitle }}
+        <span class="subtitle">{{.}}</span>
+        {{ end }}
+      </header>
+      <div class="homepage-content">
+        {{.Content}}
+      </div>
+      <div>
+        {{ range first 10 .Data.Pages }}
+            {{ .Render "summary"}}
+        {{ end }}
+      </div>
+    </main>
+{{ end }}

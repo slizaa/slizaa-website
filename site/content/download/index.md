@@ -5,7 +5,7 @@ menu:
   main:
     name: "Download"
     identifier: "download"
-    weight: 40
+    weight: 20
     pre: "<i class='fa fa-download'></i>" 
     url: "/download"   
 ---

@@ -3,6 +3,11 @@
     {{ .Title }}
   </h3>
   <div class="card-body">
+    {{ if and ((.Date)  (.Params.author))}}
+    <div class="card-text">
+      {{ .Date.Format "January 2, 2006" }} - {{ .Params.author }}
+    </div>
+    {{ end }}
     <div class="card-text">{{- .Summary -}}</div>
     <a href="{{ .URL }}" class="card-link">Read More »</a>
   </div>

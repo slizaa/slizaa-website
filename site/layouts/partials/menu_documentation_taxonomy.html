@@ -1,6 +1,6 @@
-<ul class="docs-nav">
-    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-        <li class="border-bottom font-weight-bold mb-0">{{ $name | title }}</li>
+<ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies.doccats }}
+        <li class="border-bottom font-weight-bold mb-1">{{ $name | title }}</li>
         {{ range $taxonomy.Pages }}
             {{ if ne .Title "" }}
             <li><a href="{{ .URL  }}" class="cc-active">{{ .Title }}</a></li>

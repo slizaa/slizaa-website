@@ -4,28 +4,12 @@ title = "Slizaa"
 
 relativeURLs = true
 
+enableGitInfo = true 
+
 pygmentsStyle = "tango"
 
-[[menu.main]]
-    name = "Get involved"
-    identifier = "getinvolved"
-    weight = 50
-    pre = "<i class='fa fa-code-fork'></i>" 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  doccat = "doccats"
 
-[[menu.main]]
-    name = "Source Code"
-    parent = "getinvolved"
-    weight = 10
-    url = "https://github.com/slizaa"
-
-[[menu.main]]
-    name = "Issue Tracker"
-    parent = "getinvolved"
-    weight = 20
-    url = "https://github.com/slizaa/slizaa-rcp-workbench/issues"    
-
-[[menu.main]]
-    name = "CI Server"
-    parent = "getinvolved"
-    weight = 30
-    url = "https://travis-ci.org/slizaa"
