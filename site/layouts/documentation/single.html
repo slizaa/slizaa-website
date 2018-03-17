@@ -22,6 +22,10 @@
                     {{ .Summary }}
             </div>
 
+            <div id="page-toc-box">
+                {{ .TableOfContents }}
+            </div>
+
             <div class="section-content">
                 {{ replace .Content .Summary "" | safeHTML }}
             </div>

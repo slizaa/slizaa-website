@@ -6,32 +6,24 @@
     <div class="row">
 
         <!-- documentation navigation -->
-        <div id="categories-toc"  class="col-md-2 col-lg-2">
-            <div id="categories-toc-box">
+        <div id="pages-toc" class="col-md-3 col-lg-3">
+            <div id="pages-toc-box">
+                {{ partial "menu_section.html" (dict "current" . "section" .Section "title" "Latest News") }}
             </div>
         </div>
 
-        <div id="main-content" class="col-md-8 col-lg-8">
-            <div id="main-page-content" class="section-container main-page-content clearfix">
+        <div id="main-content" class="col-md-9 col-lg-9">
 
-                <div class="section-content">
-                    <h1>{{ .Title }}</h1>
-                </div>
-
-                <div class="section-content">
-                        {{ .Summary }}
-                </div>
-
-                <div class="section-content">
-                    {{ replace .Content .Summary "" | safeHTML }}
-                </div>
+            <div class="section-content">
+                <h1>{{ .Title }}</h1>
             </div>
-        </div>
 
-        <!-- documentation toc -->
-        <div id="page-toc" class="col-md-2 col-lg-2">
-            <div id="page-toc-box" > 
-                {{ .TableOfContents }}
+            <div class="section-content">
+                {{ .Summary }}
+            </div>
+
+            <div class="section-content">
+                {{ replace .Content .Summary "" | safeHTML }}
             </div>
         </div>
 
