@@ -9,6 +9,7 @@ developmentCategories_weight: 1
 ---
 
 You love Slizaa but miss a certain feature? You found a bug and want to report it, or even better, fix it yourself? 
+
 That's great! Slizaa is all open source and your help is highly appreciated.
 
 <table class="table">
@@ -25,7 +26,7 @@ That's great! Slizaa is all open source and your help is highly appreciated.
     <td width="20%">Issue tracker</td><td><a target="_blank" href="https://github.com/slizaa/slizaa-rcp-workbench/issues">https://github.com/slizaa/slizaa-rcp-workbench/issues</a></td>
   </tr>
   <tr>
-    <td width="20%">Discussions</td><td><a target="_blank" href="https://groups.google.com/forum/#!forum/slizaa-users"></a>https://groups.google.com/forum/#!forum/slizaa-users</td>
+    <td width="20%">Discussions</td><td>Join the <a target="_blank" href="https://groups.google.com/forum/#!forum/slizaa-users">slizaa-users</a> Google group</td>
   </tr>
   <tr>
     <td width="20%">CI build</td><td><a target="_blank" href="https://travis-ci.org/slizaa">https://travis-ci.org/slizaa</a></td>
@@ -35,3 +36,5 @@ That's great! Slizaa is all open source and your help is highly appreciated.
   </tr>
 </tbody>
 </table>
+
+Slizaa follows the _Fork & Pull_ development approach. To get started just fork a Slizaa repository to your GitHub account and create a new topic branch for each change. A 'topic' branch is a separate branch that you use when working on a single 'topic' (a bug fix, a new feature, or an experimental idea). Once you are done with your change, submit a pull request against the Slizaa repository.
