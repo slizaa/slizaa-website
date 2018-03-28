@@ -10,34 +10,44 @@ Only have a few minutes? The Quick Start Guide is intended as a basic guide to h
 
 ## Step 1: Download and install
 
-Download the latest slizaa distribution here. You have to unpack the platform-specific archive to an arbitrary folder on your local disc. Start slizaa by double-clicking the slizaa executable that you can find in the installation directory.
+Slizaa is a desktop application and runs on Windows, Mac and Linux (note that Slizaa requires a 64-Bit JRE/JDK 1.8 or higher).
 
-### Installing the slizaa extensions
-When you start slizaa fort he first time, the „Install extensions dialog“ opens up automatically. The „Install extensions“ dialog allows you to install the required graph database backend and several parsers (currently only the Java language is supported). You can also select the extensions dialog later at any time by choosing `Help → Install slizaa extensions`.
-[[image]]
+### Install Slizaa
+The Slizaa desktop application is distributed as a platform specific archive. You can download the latest slizaa distribution [here](/download/). Please unpack the archive to an arbitrary folder on your local disc. Start slizaa by double-clicking the slizaa executable that you can find in the installation directory.
 
-If you start slizaa for the first time, it opens the 'Graph Mapping' perspective as the default perspective (see figure 1).
+### Install Slizaa extensions
+When you start slizaa fort he first time, the `Install extensions dialog` opens up automatically. This dialog allows you to install the required graph database backend and several parsers (currently only the Java language is supported). You can also select the extensions dialog later at any time by choosing `Help → Install slizaa extensions`.
+
+Make sure that you select 
+
+{{< figure src="/img/documentation/quick_start/extension_dialog.png" width="70%" title="Slizaa extensions dialog" >}}
 
 ## Step 2: Parse  
 
-### Create a slizaa project
-To analyze software structure graphs with slizaa, you first have to create a slizaa project. A slizaa project acts as a container for slizaa-specific resources like cypher query files, custom graph mapping definitions and so on. It also contains the project configuration that specifies which artifacts should be parsed and analyzed.
-To create a new project, right-click in the project explorer and select `New → slizaa Project…` (see Figure 3).
-A slizaa project is always also an Eclipse JDT project, as the slizaa project is configured programmatically by providing a Java-based configuration class from within slizaa. The Slizaa project wizard automatically creates valid configuration class for you that can be further customized if needed.
+Slizaa opens the `Graph Mapping` perspective as the default. Before you can parse and analyze applications, you must to create a slizaa project. A *slizaa project* specifies which artifacts should be parsed and analyzed. It also acts as a container for slizaa-specific resources like cypher query files, custom graph mapping definitions and so on.
 
-### Define the project content
-The primary task oft he Java-based project configuration is to specify which content (e.g., jars) should be parsed and analyzed by Slizaa. In principle, Slizaa can parse content from arbitrary locations, but by default, a slizaa project specifies a project-relative directory called „_content“ as the parent folder for your artifacts. Just copy the Jars that you want to analyze in this folder. Directly after the project‘s creation, this folder contains the guava library as an example content. 
-To parse the content and create the graph database, choose „Parse“ from the project pop-up menu.
+### Create a Slizaa project
+To create a new Slizaa project, right-click in the project explorer and select `New → Slizaa Project…`. A Slizaa project is always also an Eclipse JDT project, as a slizaa project is configured programmatically by providing a Java-based configuration. The Slizaa project wizard automatically creates a valid configuration class that can be further customized if needed.
+
+{{< figure src="/img/documentation/quick_start/example_project.png" width="100%" title="An example project" >}}
+
+### Define the content to be parsed
+One of the primary tasks of the configuration class is to specify the content that should be parsed and analyzed by Slizaa. By default, the slizaa project contains a project-relative directory `_content` that acts as a parent folder for the artifacts that should be analyzed. Just copy all Jars you want to analyze into this folder. Initially this folder contains the guava library as an example content. 
 
 ### Parse the software system
-akjsdkashd
+To parse the specified content, choose `Parse` from the project's pop-up menu.
 
+{{< figure src="/img/documentation/quick_start/parse_the_project.png" width="100%" title="Parse a software system" >}}
 
-## Step 4: Create hierarchical graph mapping
-akjsdkashd
+It is only necessary to parse (or re-parse) an application if the underlying content definition has changed. You can start (or restart) the embedded graph database at any time by selecting `Start/Connect Database` from the project's context menu. 
 
-## Step 5: Execute 
-akjsdkashd
+## Step 4: Create a hierarchical Graph
 
-## Step 6: Visualize your system
-akjsdkashd
+{{< figure src="/img/documentation/quick_start/create_hierarchical_graph.png" width="100%" title="Create a hierarchical graph" >}}
+
+{{< figure src="/img/documentation/quick_start/hierarchical_graph.png" width="100%" title="A hierarchical graph" >}}
+
+## Step 5: Visualize your system 
+{{< figure src="/img/documentation/quick_start/DSM_view.png" width="100%" title="The Dependency Structure Matrix (DSM)" >}}
+
+{{< figure src="/img/documentation/quick_start/graph_view.png" width="100%" title="The graph view" >}}

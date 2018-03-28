@@ -13,7 +13,10 @@
 
                 {{  range $i, $v := $categories }}
                     {{ if eq $i $lastIndex }}
-                        <span class="breadcrumb-item active">{{ $v }}</span>
+                        {{ if (not (eq $v "index.php" )) }}
+                            <hurz>{{ $v }}</hurz>
+                            <span class="breadcrumb-item active">{{ $v }}</span>
+                        {{ end }}    
                     {{ else }}
                         {{ $firstPart := add $i 1 }}
                         {{ $subDirs := first $firstPart $categories }}

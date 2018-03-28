@@ -94,8 +94,8 @@ title: Slizaa
     <div class="row">
         <div class="col-md-7">
             <h2>Out-of-the-box support for Neo4j.</h2>
-            <p>Slizaa can be used with any graph database that supports both the <a href="https://boltprotocol.org">Bolt network protocol</a> and the <a href="https://www.opencypher.org">Cypher graph database query language</a></p>
-            <p>However, Slizaa comes with an out-of-the-box support for embeddeding <a href="https://neo4j.com">Neo4j</a> as an in-process database. Simply install the extension from within the workbench using the Slizaa extension dialog   (note that Neo4j database extension as well as Slizaa's Java parser 'JType' are licensed under the GPL 3.0).</p>
+            <p>You can use Slizaa with any graph database that supports both the<a href="https://boltprotocol.org">Bolt network protocol</a> and the <a href="https://www.opencypher.org">Cypher graph database query language</a>.
+            <p>However, Slizaa comes with out-of-the-box support for embedding  <a href="https://neo4j.com">Neo4j</a> as an in-process database. Simply install the 'Slizaa Neo4j Backend' extension from within the workbench using the Slizaa extension dialog (note that Neo4j database extension as well as Slizaa's Java parser 'JType' are licensed under the GPL 3.0).</p>
         </div>
         <div class="col-md-5">
             <img class="img-fluid mx-auto" src="/img/slizaa_BackEndExtensions.png">
