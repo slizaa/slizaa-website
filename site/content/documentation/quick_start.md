@@ -18,7 +18,7 @@ The Slizaa desktop application is distributed as a platform specific archive. Yo
 ### Install Slizaa extensions
 When you start slizaa fort he first time, the `Install extensions dialog` opens up automatically. This dialog allows you to install the required graph database backend and several parsers (currently only the Java language is supported). You can also select the extensions dialog later at any time by choosing `Help → Install slizaa extensions`.
 
-Make sure that you select 
+Make sure that you select both the Slizaa Neo4j Backend and the Slizaa JType extension!
 
 {{< figure src="/img/documentation/quick_start/extension_dialog.png" width="70%" title="Slizaa extensions dialog" >}}
 
@@ -41,13 +41,13 @@ To parse the specified content, choose `Parse` from the project's pop-up menu.
 
 It is only necessary to parse (or re-parse) an application if the underlying content definition has changed. You can start (or restart) the embedded graph database at any time by selecting `Start/Connect Database` from the project's context menu. 
 
-## Step 4: Create a hierarchical Graph
+## Step 3: Create a hierarchical Graph
 
 {{< figure src="/img/documentation/quick_start/create_hierarchical_graph.png" width="100%" title="Create a hierarchical graph" >}}
 
 {{< figure src="/img/documentation/quick_start/hierarchical_graph.png" width="100%" title="A hierarchical graph" >}}
 
-## Step 5: Visualize your system 
+## Step 4: Visualize your system 
 {{< figure src="/img/documentation/quick_start/DSM_view.png" width="100%" title="The Dependency Structure Matrix (DSM)" >}}
 
 {{< figure src="/img/documentation/quick_start/graph_view.png" width="100%" title="The graph view" >}}

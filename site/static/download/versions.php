@@ -4,7 +4,7 @@
 $releases = array();
 
 // the pattern
-$pattern = '/slizaa-(\d*\.\d*\.\d*)\.(\d{4})(\d{2})(\d{2})(\d{4}).*/';
+$pattern = '/slizaa-(\d*\.\d*\.\d*\.\w*).*/';
 
 $path    = '../downloads';
 $files = array_diff(scandir($path), array('.', '..'));
@@ -15,7 +15,7 @@ foreach (array_reverse($files) as $filename) {
   // pattern match		
   if (preg_match($pattern, $filename, $matches)) {
 
-    $date = $matches[2]."-".$matches[3]."-".$matches[4]."_".$matches[5];
+    $date = $matches[2];
     
     // new key
     if (!array_key_exists($matches[1], $releases)) {
@@ -40,13 +40,8 @@ $downloadUrl = "http://www.slizaa.org/downloads/";
 for ($i=0; $i<$releasesCount; $i++) {
 
 	$version = $keys[$i].".".str_replace("_", "",  str_replace("-", "", $releases[$keys[$i]]));
-	if ($i=="0") {
-    $releaseDate = "Development - Build ".$version;
-   } else {
-		$releaseDate = "Stable - ".substr($releases[$keys[$i]], 0, strpos($releases[$keys[$i]], "_"));
-   }
 	
-  echo "<h2><b>".$keys[$i]."</b> <i>(".$releaseDate.")</i></h2>";
+  echo "<h2><b>".$keys[$i]."</b></h2>";
   echo "<div class=\"table-responsive\">";
   echo "<table class=\"download-table table table-bordered\">";
   echo "<tr>";
@@ -59,19 +54,19 @@ for ($i=0; $i<$releasesCount; $i++) {
   // windows
   echo "<td class=\"download-td\">";
   echo "<a class=\"btn btn-lg btn-primary\"";
-  echo " href=\"".$downloadUrl."slizaa-".$version."-win32.win32.x86_64.zip\"><i";
+  echo " href=\"".$downloadUrl."slizaa-".$keys[$i]."-win32.win32.x86_64.zip\"><i";
   echo " class=\"fa fa-download \"></i>".$keys[$i]." (win32/x86_64)</a>";
   echo "</td>";
   // mac
   echo "<td class=\"download-td\">";
   echo "<a class=\"btn btn-lg btn-primary\"";
-  echo " href=\"".$downloadUrl."slizaa-".$version."-macosx.cocoa.x86_64.zip\"><i";
+  echo " href=\"".$downloadUrl."slizaa-".$keys[$i]."-macosx.cocoa.x86_64.zip\"><i";
   echo " class=\"fa fa-download \"></i>".$keys[$i]." (macosx/x86_64)</a>";
   echo "</td>";
   // linux
   echo "<td class=\"download-td\">";
   echo "<a class=\"btn btn-lg btn-primary\"";
-  echo " href=\"".$downloadUrl."slizaa-".$version."-linux.gtk.x86_64.zip\"><i";
+  echo " href=\"".$downloadUrl."slizaa-".$keys[$i]."-linux.gtk.x86_64.zip\"><i";
   echo " class=\"fa fa-download \"></i>".$keys[$i]." (linux.gtk/x86_64)</a>";
   echo "</td>";
    

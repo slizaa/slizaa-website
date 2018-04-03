@@ -14,6 +14,6 @@ menu:
 
 <div class="content">
 <?php
- include("versions.php");
+ include("./versions.php");
 ?>
 </div>
