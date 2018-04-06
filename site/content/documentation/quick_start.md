@@ -15,16 +15,16 @@ Slizaa is a desktop application and runs on Windows, Mac and Linux (note that Sl
 ### Install Slizaa
 The Slizaa desktop application is distributed as a platform specific archive. You can download the latest slizaa distribution [here](/download/). Please unpack the archive to an arbitrary folder on your local disc. Start slizaa by double-clicking the slizaa executable that you can find in the installation directory.
 
-### Install Slizaa extensions
+### Install the Slizaa extensions
 When you start slizaa fort he first time, the `Install extensions dialog` opens up automatically. This dialog allows you to install the required graph database backend and several parsers (currently only the Java language is supported). You can also select the extensions dialog later at any time by choosing `Help → Install slizaa extensions`.
 
 Make sure that you select both the Slizaa Neo4j Backend and the Slizaa JType extension!
 
 {{< figure src="/img/documentation/quick_start/extension_dialog.png" width="70%" title="Slizaa extensions dialog" >}}
 
-## Step 2: Parse  
+## Step 2: Parse your application 
 
-Slizaa opens the `Graph Mapping` perspective as the default. Before you can parse and analyze applications, you must to create a slizaa project. A *slizaa project* specifies which artifacts should be parsed and analyzed. It also acts as a container for slizaa-specific resources like cypher query files, custom graph mapping definitions and so on.
+Before you can parse and analyze applications, you must to create a slizaa project. A *slizaa project* specifies which artifacts should be parsed and analyzed. It also acts as a container for slizaa-specific resources like cypher query files, custom graph mapping definitions and so on.
 
 ### Create a Slizaa project
 To create a new Slizaa project, right-click in the project explorer and select `New → Slizaa Project…`. A Slizaa project is always also an Eclipse JDT project, as a slizaa project is configured programmatically by providing a Java-based configuration. The Slizaa project wizard automatically creates a valid configuration class that can be further customized if needed.

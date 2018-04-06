@@ -12,6 +12,10 @@ body {
   line-height:1.8;
 }
 
+p {
+  margin-bottom: 0.25rem;
+}
+
 #main-content {
 
   padding: 20px;
@@ -35,6 +39,14 @@ figcaption h4 {
   } 
 }
 
+figure > img {
+  @media (min-width: 992px) {
+    -webkit-box-shadow: 5px 5px 8px 0px rgba(100,100,100,0.6);
+    -moz-box-shadow: 5px 5px 8px 0px rgba(100,100,100,0.6);
+    box-shadow: 5px 5px 8px 0px rgba(100,100,100,0.6);
+  }
+}
+
 .footer {
   border-radius: 20px 20px 20px 20px !important;
   font-size: 0.8rem; 
@@ -43,11 +55,7 @@ figcaption h4 {
 .nav-footer {
   width: 100%;
   text-align: center;
-  
-  ul {
-    background-color: violet;
-  }  
-  
+   
   li {
     display: inline;
     list-style-type: none;
