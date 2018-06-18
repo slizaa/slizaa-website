@@ -8,5 +8,5 @@ menu:
     title: "Documentation"
     weight: 30
     pre: "<i class='fa fa-terminal'></i>" 
-    url: "/documentation/quick_start/"     
+    url: "/documentation/quickstart_install/"     
 ---

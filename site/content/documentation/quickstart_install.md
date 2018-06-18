@@ -13,15 +13,15 @@ Slizaa is a desktop application and runs on Windows, Mac and Linux (note that Sl
 ## Download Slizaa
 The Slizaa desktop application is distributed as a platform specific archive. You can download the latest slizaa distribution using the following download link:
 
-<a href="/download/" target="_blank" class="btn btn-secondary">Download <span class="pl-2 fa fa-download"></span></a>
+<a href="/download/" target="_blank" class="mt-2 mb-2 btn btn-secondary">Download <span class="pl-2 fa fa-download"></span></a>
 
 ## Unpack and start Slizaa
 Please unpack the archive to an arbitrary folder on your local disc. Start slizaa by double-clicking the slizaa executable that you can find in the installation directory.
 
-{{< figure src="/img/documentation/quick_start/install/slizaa_directory.png" width="25%" title="Slizaa installation directory" >}}
+{{< figure src="/img/documentation/quick_start/install/slizaa_directory.png" width="23%" title="Slizaa installation directory" >}}
 
 ## Install the Slizaa extensions
-When you start slizaa fort he first time, the `Install extensions dialog` opens up automatically. This dialog allows you to install the required graph database backend and several parsers (currently only the Java language is supported). You can also select the extensions dialog later at any time by choosing `Help → Install slizaa extensions`.
+When you start slizaa for the first time, the `Install extensions dialog` opens up automatically. This dialog allows you to install the required graph database backend and several parsers (currently only the Java language is supported). You can also select the extensions dialog later at any time by choosing `Help → Install slizaa extensions`.
 
 Make sure that you select both the Slizaa Neo4j Backend and the Slizaa JType extension! Follow the wizard to complete the installation.
 
