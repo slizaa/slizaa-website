@@ -30,14 +30,21 @@ You can save the current query by hiting `Strg+Alt+S` or pushing the the 'Save' 
 
 ## Example cypher queries
 
+List all (fully qualified) module names:
+
 ```
 MATCH (f:Module) RETURN f.fqn
 ```
+
+Return the overall type count:
 
 ```
 MATCH (t:Type) RETURN count(t)
 ```
 
+List all (fully qualified) types names that extends 'java.lang.Enum':
+
 ```
-MATCH (t:Type)-[:EXTENDS]->(super:TypeReference) WHERE super.name ENDS WITH 'Exception' RETURN t.fqn, super.fqn
+MATCH (t:Type)-[:EXTENDS]->(super:TypeReference {fqn: 'java.lang.Enum'}) 
+RETURN t.fqn
 ```
