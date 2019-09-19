@@ -11,7 +11,7 @@ title: Slizaa
         </div>
         <div class="lead text-center mt-3">A Free and Open Source Workbench for Software Dependency Analysis.</div>
         <div class="text-center mt-4">
-            <a href="/documentation/quick_start/" class="btn btn-primary mr-2">Quick Start<span class="pl-2 fa fa-angle-double-right" /></a>
+            <a href="/documentation/quickstart_install/" class="btn btn-primary mr-2">Quick Start<span class="pl-2 fa fa-angle-double-right" /></a>
             <a href="/download/" class="btn btn-secondary">Download <span class="pl-2 fa fa-download" /></a>
         </div>
     </div>
